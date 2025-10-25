@@ -90,8 +90,8 @@ function Contact() {
       </div>
 
       {/* Form Content */}
-      <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-6 py-24">
-        <div className="w-full max-w-xl">
+      <div className="relative z-10 min-h-screen flex flex-col items-center justify-between px-6 py-24">
+        <div className="w-full max-w-xl flex-grow flex items-center justify-center">
           {/* Glassmorphic Container */}
           <div className="relative">
             {/* Glowing border effect */}
@@ -267,7 +267,7 @@ function Contact() {
         </div>
 
         {/* Footer */}
-        <div className="w-full max-w-md mt-12">
+        <div className="w-full max-w-md">
           <div className="flex items-center justify-center gap-6 mb-4">
             <a
               href="https://instagram.com"
