@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { X, Mail, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import Footer from '../components/Footer';
 
 function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -29,7 +30,7 @@ function Contact() {
   };
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-black">
+    <div className="relative min-h-screen overflow-hidden bg-black flex flex-col">
       {/* Animated Background - Same as home page */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -90,7 +91,7 @@ function Contact() {
       </div>
 
       {/* Form Content */}
-      <div className="relative z-10 min-h-screen flex items-center justify-center px-6 py-24">
+      <div className="relative z-10 flex-1 flex items-center justify-center px-6 py-24">
         <div className="w-full max-w-xl">
           {/* Glassmorphic Container */}
           <div className="relative">
@@ -266,6 +267,8 @@ function Contact() {
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }
