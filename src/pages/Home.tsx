@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Footer from '../components/Footer';
 
 function Home() {
   const [isVisible, setIsVisible] = useState(false);
@@ -10,7 +9,7 @@ function Home() {
   }, []);
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-black flex flex-col">
+    <div className="relative min-h-screen overflow-hidden bg-black">
       {/* Animated Background */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -91,30 +90,27 @@ function Home() {
             Established 2024 · London
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-            <Link
-              to="/contact"
-              className="inline-block px-8 py-4 text-lg font-semibold text-gray-900 bg-[#FFD166] rounded-lg
-                         shadow-[0_0_20px_rgba(255,200,60,0.8)] hover:shadow-[0_0_35px_rgba(255,200,60,1)]
-                         hover:scale-105 transition-all duration-300"
-            >
-              Submit Your Music
-            </Link>
-            <Link
-              to="/artists"
-              className="inline-block px-8 py-4 text-lg font-semibold text-[#FFD166] bg-transparent rounded-lg
-                         border-2 border-[#FFD166] shadow-[0_0_20px_rgba(255,200,60,0.4)]
-                         hover:bg-[#FFD166] hover:text-gray-900 hover:shadow-[0_0_35px_rgba(255,200,60,0.8)]
-                         hover:scale-105 transition-all duration-300"
-            >
-              Our Artists
-            </Link>
-          </div>
+          <Link
+            to="/contact"
+            className="inline-block px-8 py-4 text-lg font-semibold text-gray-900 bg-[#FFD166] rounded-lg
+                       shadow-[0_0_20px_rgba(255,200,60,0.8)] hover:shadow-[0_0_35px_rgba(255,200,60,1)]
+                       hover:scale-105 transition-all duration-300"
+          >
+            Submit Your Music
+          </Link>
         </div>
 
+        {/* Footer */}
+        <div
+          className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 transition-all duration-1500 delay-300 ease-out ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+          }`}
+        >
+          <p className="text-sm text-[#FFD166] drop-shadow-[0_0_8px_rgba(255,200,60,0.6)]">
+            © 2025 Solar Music Group LTD.
+          </p>
+        </div>
       </div>
-
-      <Footer />
     </div>
   );
 }
