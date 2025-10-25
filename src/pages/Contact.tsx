@@ -90,8 +90,8 @@ function Contact() {
       </div>
 
       {/* Form Content */}
-      <div className="relative z-10 min-h-screen flex flex-col items-center justify-between px-6 py-24">
-        <div className="w-full max-w-xl flex-grow flex items-center justify-center">
+      <div className="relative z-10 min-h-screen flex items-center justify-center px-6 py-24">
+        <div className="w-full max-w-xl">
           {/* Glassmorphic Container */}
           <div className="relative">
             {/* Glowing border effect */}
@@ -265,47 +265,47 @@ function Contact() {
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Footer */}
-        <div className="w-full max-w-md">
-          <div className="flex items-center justify-center gap-6 mb-4">
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#FFD166]/60 hover:text-[#FFD166] transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,200,60,0.8)]"
-            >
-              <Instagram className="w-5 h-5" />
-            </a>
-            <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#FFD166]/60 hover:text-[#FFD166] transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,200,60,0.8)]"
-            >
-              <Twitter className="w-5 h-5" />
-            </a>
-            <a
-              href="https://youtube.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#FFD166]/60 hover:text-[#FFD166] transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,200,60,0.8)]"
-            >
-              <Youtube className="w-5 h-5" />
-            </a>
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#FFD166]/60 hover:text-[#FFD166] transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,200,60,0.8)]"
-            >
-              <Facebook className="w-5 h-5" />
-            </a>
-          </div>
-          <p className="text-center text-xs text-[#FFD166]/70 drop-shadow-[0_0_8px_rgba(255,200,60,0.6)]">
-            © 2025 Solar Music Group All rights reserved.
-          </p>
+      {/* Footer */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 w-full max-w-md px-6 z-10">
+        <div className="flex items-center justify-center gap-6 mb-4">
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#FFD166]/60 hover:text-[#FFD166] transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,200,60,0.8)]"
+          >
+            <Instagram className="w-5 h-5" />
+          </a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#FFD166]/60 hover:text-[#FFD166] transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,200,60,0.8)]"
+          >
+            <Twitter className="w-5 h-5" />
+          </a>
+          <a
+            href="https://youtube.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#FFD166]/60 hover:text-[#FFD166] transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,200,60,0.8)]"
+          >
+            <Youtube className="w-5 h-5" />
+          </a>
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#FFD166]/60 hover:text-[#FFD166] transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,200,60,0.8)]"
+          >
+            <Facebook className="w-5 h-5" />
+          </a>
         </div>
+        <p className="text-center text-xs text-[#FFD166]/70 drop-shadow-[0_0_8px_rgba(255,200,60,0.6)]">
+          © 2025 Solar Music Group All rights reserved.
+        </p>
       </div>
     </div>
   );
