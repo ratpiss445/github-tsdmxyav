@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Instagram, Twitter, Youtube, Facebook } from 'lucide-react';
 
 function Home() {
   const [isVisible, setIsVisible] = useState(false);
@@ -102,12 +103,46 @@ function Home() {
 
         {/* Footer */}
         <div
-          className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 transition-all duration-1500 delay-300 ease-out ${
+          className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 w-full max-w-md px-6 transition-all duration-1500 delay-300 ease-out ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
           }`}
         >
-          <p className="text-sm text-[#FFD166] drop-shadow-[0_0_8px_rgba(255,200,60,0.6)]">
-            © 2025 Solar Music Group LTD.
+          <div className="flex items-center justify-center gap-6 mb-4">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#FFD166]/60 hover:text-[#FFD166] transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,200,60,0.8)]"
+            >
+              <Instagram className="w-5 h-5" />
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#FFD166]/60 hover:text-[#FFD166] transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,200,60,0.8)]"
+            >
+              <Twitter className="w-5 h-5" />
+            </a>
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#FFD166]/60 hover:text-[#FFD166] transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,200,60,0.8)]"
+            >
+              <Youtube className="w-5 h-5" />
+            </a>
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#FFD166]/60 hover:text-[#FFD166] transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(255,200,60,0.8)]"
+            >
+              <Facebook className="w-5 h-5" />
+            </a>
+          </div>
+          <p className="text-center text-xs text-[#FFD166]/70 drop-shadow-[0_0_8px_rgba(255,200,60,0.6)]">
+            © 2025 Solar Music Group All rights reserved.
           </p>
         </div>
       </div>
